@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="alert alert-success mt-5" role="alert">
+        Your are successfully login
+    </div>
+    <div class="d-flex justify-content-center">
+        <h3 class="text-center mt-5">Welcome to home</h3>
+    </div>
+  
+ <form [formGroup]="createVisitForm">
+  <div class="form-group">
+    <label for="email">email</label>
+    <input formControlName="email" type="text" class="form-control" id="email"  placeholder="Enter email">
+    
+  </div>
+        <div class="form-group">
+          <label for="processId">processId</label>
+          <input formControlName="processId" type="text" class="form-control" id="processId"  placeholder="Enter processId">
+          
+        </div>
+        <div class="form-group">
+          <label for="sourceUId">sourceUId</label>
+          <input formControlName="sourceUId" type="text" class="form-control" id="sourceUId" placeholder="sourceUId">
+        </div>
+        <div class="form-group">
+            <label for="idNumber">idNumber</label>
+            <input formControlName="idNumber" type="text" class="form-control" id="idNumber" placeholder="idNumber">
+          </div>
+          <div class="form-group">
+            <label for="CellphoneNumber">cellphoneNumber</label>
+            <input formControlName="cellphoneNumber" type="text" class="form-control" id="CellphoneNumber" placeholder="cellphoneNumber">
+          </div>
+          <div class="form-group">
+            <label for="source">source</label>
+            <input formControlName="source" type="text" class="form-control" id="source" placeholder="source">
+          </div>
+          <div class="form-check">
+            <input  formControlName="tnCsConfirmed" type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label  class="form-check-label" for="exampleCheck1">tnCsConfirmed</label>
+          </div>
+      </form>
+      <button class="btn btn-primary mt-3" (click)="createVisit()">Create Visit</button>
+</div>
